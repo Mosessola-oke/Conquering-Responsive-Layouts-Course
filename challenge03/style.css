@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  width: 100%;
+  background: #23424A;
+  padding: 7em 5em 10em 8em;
+  max-width: 1441px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 800px;
+  color: #ffffff;
+}
+h1{
+  font-weight: 800;
+  font-size: 2.8rem;
+  margin-bottom: .5em;
+}
+
+p{
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: rgb(197, 197, 197);
+}
+
+button {
+  border-style: none;
+  margin: 5em auto 0.25em 0.25em;
+  padding: 2em 4em;
+  border-radius: 5em;
+  background: #38CFD9;
+}
+
+a {
+  text-decoration: none;
+  color: #072A2D;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
