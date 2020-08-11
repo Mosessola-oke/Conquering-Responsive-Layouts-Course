@@ -1,34 +1,37 @@
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 html {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
-  width: 100%;
   background: #23424A;
-  padding: 7em 5em 10em 8em;
-  max-width: 1441px;
-  margin: 0 auto;
+  padding: 100px 0;
+  color: #ffffff;
 }
 
 .content {
-  max-width: 800px;
-  color: #ffffff;
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container__text{
+  width: 60%;
 }
 h1{
   font-weight: 800;
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   margin-bottom: .5em;
 }
 
 p{
-  line-height: 1.5;
-  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
   color: rgb(197, 197, 197);
 }
 
