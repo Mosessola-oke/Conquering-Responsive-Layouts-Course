@@ -52,7 +52,6 @@ a {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 2.5rem;
-  max-width: 500px;
   line-height: 2.5rem;
   color: #824936;
 }
@@ -112,4 +111,34 @@ a {
 .inspiration .image {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .row {
+    flex-direction: column;
+  }
+  .main-header {
+    padding: 12rem 2rem;
+  }
+  ._article {
+    padding: 6rem 0;
+  }
+  .article {
+    margin: 0 auto;
+  }
+  .article__txt {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .inspiration {
+    padding: 6rem 0rem;
+  }
+  .inspiration__text, .inspiration__img {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .inspiration__img {
+    padding: 1rem 0;
+  }
 }
