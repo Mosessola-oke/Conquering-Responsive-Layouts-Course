@@ -55,6 +55,8 @@ header {
   background: #2e323f;
   text-align: center;
   padding: 1.5rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .navtoggle {
@@ -125,11 +127,13 @@ header {
   font-family: "Oswald", sans-serif;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .main h1 {
   color: white;
   font-size: 2.625rem;
+  line-height: 1em;
 }
 
 .main__para {
@@ -141,6 +145,7 @@ header {
 }
 
 .main__para .cta {
+  cursor: pointer;
   text-align: center;
   width: 12em;
   background: #a59678;
@@ -163,7 +168,16 @@ header {
 .points__text {
   display: block;
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
+}
+
+.points__title {
+  font-size: 1.875rem;
+  padding-bottom: 1rem;
+}
+
+.points__para {
+  font-size: 1.125rem;
 }
 
 .article {
@@ -172,6 +186,7 @@ header {
 
 .article__title {
   color: #a59678;
+  font-size: 2rem;
   padding: 1rem 0;
 }
 
@@ -187,7 +202,7 @@ header {
 
 .sidecontent__container {
   background: #3b4050;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
   padding: 1.5em 0;
   text-align: center;
 }
@@ -201,8 +216,13 @@ header {
   padding: 0.5em;
 }
 
+.sidecontent__para {
+  color: #cccaca;
+}
+
 .footer {
   background: #3b4050;
+  padding-bottom: 2rem;
 }
 
 .footer--titlemain {
@@ -231,4 +251,105 @@ header {
 .footer__para {
   font-size: 1rem;
   padding: 0.5em 0;
+}
+
+@media screen and (min-width: 700px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .head {
+    padding: 0rem 1.5rem;
+  }
+  .navtoggle {
+    display: none;
+  }
+  .nav {
+    visibility: visible;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .nav__list {
+    display: flex;
+  }
+  .nav__link {
+    font-size: 1.25rem;
+  }
+  .main {
+    padding: 5rem;
+  }
+  .main h1 {
+    font-size: 3.625rem;
+    max-width: 30em;
+  }
+  .main__para {
+    align-self: flex-end;
+    max-width: 24em;
+  }
+  .points__container {
+    padding: 2rem 0.5rem;
+  }
+  .points__title {
+    font-size: 1.875rem;
+    padding-bottom: 1rem;
+  }
+  .footer__main {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .row-big {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .main {
+    padding: 5rem;
+  }
+  .main h1 {
+    font-size: 4.625rem;
+  }
+  .main__para {
+    align-self: flex-end;
+    font-size: 1.5rem;
+  }
+  .article {
+    padding: 2rem 0;
+    flex-grow: 1;
+    padding: 0 2rem;
+  }
+  .article__title {
+    color: #a59678;
+    padding: 1rem 0;
+  }
+  .article__para {
+    color: #3b4050;
+  }
+  .article__img {
+    width: 100%;
+  }
+  .sidecontent {
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+  .sidecontent__container {
+    background: #3b4050;
+    margin: 1rem 0;
+    padding: 1em 0;
+    text-align: center;
+  }
+  .sidecontent__text {
+    width: 90%;
+  }
+  .sidecontent__title {
+    color: white;
+    padding: 0.5em;
+  }
 }

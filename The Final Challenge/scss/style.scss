@@ -39,17 +39,10 @@ section {
   font-weight: bold;
 }
 
-.para{
+.para {
   font-family: "Montserrat", sans-serif;
   color: $light-color;
 }
-
-// .row{
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-//   align-items: center;
-// }
 
 .accent {
   color: $gold-color;
@@ -65,6 +58,8 @@ header {
   background: $dark-color;
   text-align: center;
   padding: 1.5rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .navtoggle {
@@ -136,10 +131,11 @@ header {
   font-family: "Oswald", sans-serif;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   h1 {
     color: white;
-    // font-size: 5.625rem;
     font-size: 2.625rem;
+    line-height: 1em;
   }
 
   &__para {
@@ -149,7 +145,9 @@ header {
     color: white;
     font-size: 1rem;
 
+
     .cta {
+      cursor: pointer;
       text-align: center;
       width: 12em;
       background: $gold-color;
@@ -171,7 +169,15 @@ header {
   &__text {
     display: block;
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
+  }
+  &__title {
+    font-size: 1.875rem;
+    padding-bottom: 1rem;
+  }
+
+  &__para{
+    font-size: 1.125rem;
   }
 }
 
@@ -179,9 +185,10 @@ header {
   padding: 2rem 0;
   &__title {
     color: $gold-color;
+    font-size: 2rem;
     padding: 1rem 0;
   }
-  &__para{
+  &__para {
     color: $med-color;
   }
   &__img {
@@ -191,51 +198,177 @@ header {
   }
 }
 
-.sidecontent{
-  &__container{
+.sidecontent {
+  &__container {
     background: $med-color;
-    margin: 1rem 0;
+    margin: 1rem 1rem;
     padding: 1.5em 0;
     text-align: center;
   }
 
-  &__text{
+  &__text {
     width: 85%;
   }
 
-  &__title{
+  &__title {
     color: white;
-    padding: 0.5em ;
+    padding: 0.5em;
+  }
+
+  &__para{
+    color: rgb(204, 202, 202);
   }
 }
 
-.footer{
+.footer {
   background: $med-color;
-  &--titlemain{
+  padding-bottom: 2rem;
+  &--titlemain {
     color: white;
     padding: 2rem 0;
   }
 
-  &__main{
+  &__main {
     display: block;
     margin: 0 auto;
     width: 80%;
     padding: 1rem 0;
   }
 
-  &__side{
+  &__side {
     flex-direction: row;
     justify-content: space-evenly;
     align-content: flex-start;
     width: 100%;
   }
-  
-  &__content{
+
+  &__content {
     align-self: flex-start;
   }
 
-  &__para{
+  &__para {
     font-size: 1rem;
     padding: 0.5em 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .head{
+    padding: 0rem 1.5rem;
+  }
+
+  .navtoggle{
+    display: none;
+  }
+
+  .nav {
+    visibility: visible;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem;
+
+    &__list{
+      display: flex;
+    }
+
+    &__link {
+      font-size: 1.25rem;
+    }
+  }
+
+  .main {
+    padding: 5rem;
+    h1 {
+      font-size: 3.625rem;
+      max-width: 30em;
+    }
+  
+    &__para {
+      align-self: flex-end;
+      max-width: 24em;
+    }
+  }
+
+  .points{
+    &__container{
+      padding: 2rem 0.5rem;
+    }
+    &__title {
+      font-size: 1.875rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .footer{
+    &__main{
+      padding: 0 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .row-big {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .main {
+    padding: 5rem;
+    h1 {
+      font-size: 4.625rem;
+    }
+  
+    &__para {
+      align-self: flex-end;
+      font-size: 1.5rem;
+    }
+  }
+
+  .article {
+    padding: 2rem 0;
+    flex-grow: 1;
+    padding: 0 2rem;
+    &__title {
+      color: $gold-color;
+      padding: 1rem 0;
+    }
+    &__para {
+      color: $med-color;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+  
+  .sidecontent {
+    flex-direction: column;
+    padding: 0 1.5rem;
+
+    &__container {
+      background: $med-color;
+      margin: 1rem 0;
+      padding: 1em 0;
+      text-align: center;
+    }
+  
+    &__text {
+      width: 90%;
+    }
+  
+    &__title {
+      color: white;
+      padding: 0.5em;
+    }
   }
 }
