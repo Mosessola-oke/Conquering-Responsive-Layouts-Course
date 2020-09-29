@@ -1,0 +1,160 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 1128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.para {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+.main-header {
+  background: #f3eed9;
+  text-align: center;
+  padding: 12rem;
+}
+
+.main-header__txt {
+  margin: 0 auto;
+}
+
+.main-header__sml-tx {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #222c2a;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1em 4rem;
+}
+
+.main-header__lg-tx {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: #824936;
+}
+
+._article {
+  padding: 6rem;
+}
+
+.article-header {
+  margin: 0 auto;
+  padding: 1em 0;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #824936;
+}
+
+.article {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.article__txt {
+  width: 45%;
+  color: #222c2a;
+}
+
+.one {
+  background-color: #222c2a;
+}
+
+.two {
+  background-color: #824936;
+}
+
+.inspiration {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 6rem;
+  color: #f3eed9;
+}
+
+.inspiration__text {
+  width: 40%;
+}
+
+.inspiration__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 1.1rem;
+}
+
+.inspiration__img {
+  width: 50%;
+}
+
+.inspiration .image {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-header {
+    padding: 12rem 2rem;
+  }
+  ._article {
+    padding: 6rem 0;
+  }
+  .article {
+    margin: 0 auto;
+  }
+  .article__txt {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .inspiration {
+    padding: 6rem 0rem;
+  }
+  .inspiration__text, .inspiration__img {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .inspiration__img {
+    padding: 1rem 0;
+  }
+}
